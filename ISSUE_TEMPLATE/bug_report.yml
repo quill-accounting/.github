@@ -1,0 +1,35 @@
+name: Bug Report
+description: File a bug report
+title: 'Short description of the issue'
+labels: ['bug', 'triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What happened and how did the error manifest itself?
+      placeholder: Tell us what you see!
+      value: 'A bug happened!'
+    validations:
+      required: true
+  - type: textarea
+    id: what-was-expected
+    attributes:
+      label: Expected behavior?
+      description: Also tell us, what did you expect to happen?
+      placeholder: What did you expect to happen?
+      value: 'A bug happened!'
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description:
+        Please copy and paste any relevant log output. This will be
+        automatically formatted into code, so no need for backticks.
+      render: shell
